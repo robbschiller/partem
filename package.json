@@ -1,0 +1,17 @@
+{
+  "name": "partem",
+  "version": "0.0.1",
+  "description": "Anonymous posts on the purpose of our existance",
+  "main": "app.js",
+  "author": "Robb Schiller",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~3.4.8"
+  },
+  "devDependencies": {
+    "gulp": "~3.4.0",
+    "gulp-sass": "~0.4.1",
+    "gulp-nodemon": "~0.1.1",
+    "gulp-jshint": "~1.3.4"
+  }
+}
