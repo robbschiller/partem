@@ -2,11 +2,20 @@
   "name": "partem",
   "version": "0.0.1",
   "description": "Anonymous posts on the purpose of our existance",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/robbschiller/partem.git"
+  },
+  "engines": {
+      "node": "0.10.x",
+      "npm": "1.2.x"
+  },
   "main": "app.js",
   "author": "Robb Schiller",
   "license": "MIT",
   "dependencies": {
-    "express": "~3.4.8"
+    "express": "~3.4.8",
+    "jade": "~1.1.5"
   },
   "devDependencies": {
     "gulp": "~3.4.0",
