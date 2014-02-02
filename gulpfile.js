@@ -7,8 +7,8 @@ var nodemon = require("gulp-nodemon")
 
 gulp.task('sass', function () {
 	gulp.src('./public/scss/main.scss')
-		.pipe(sass(includePath: './public/scss'))
-		.pipe(gulp.dest('./public/css')
+		.pipe(sass({includePaths: ['./public/scss']}))
+		.pipe(gulp.dest('./public/css'));
 });
 
 gulp.task('lint', function () {
