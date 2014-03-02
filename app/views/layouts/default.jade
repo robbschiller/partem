@@ -1,8 +1,8 @@
 doctype html
 html(lang='en')
 	include ../includes/head
-	body
+	body(ng-app="partemApp")
 		header
-		section.container
+		section(ng-view="").container
 				block content
 		include ../includes/foot

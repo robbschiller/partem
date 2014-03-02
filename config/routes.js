@@ -2,8 +2,9 @@
 
 module.exports = function(app) {
 
-	// Home Route
+	/**
+	 * Routes
+	 */
 	var index = require('../app/controllers/index');
 	app.get('/', index.render);
-
-}
+};

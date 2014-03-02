@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var gulp = require("gulp")
 var sass = require("gulp-sass")
@@ -12,19 +12,11 @@ gulp.task('sass', function () {
 });
 
 gulp.task('lint', function () {
-	gulp.src('.public/js/**.js')
+	gulp.src('./public/js/**/*.js')
 		.pipe(jshint())
 });
 
 gulp.task('default', function () {
-	gulp.run('sass');
-
-	gulp.watch('./public/scss/**.scss', function () {
-		gulp.run('sass');
-	});
-});
-
-gulp.task('develop', function () {
-	nodemon({script: 'server.js'})
-		.on('restart', ['lint', 'sass'])
+	nodemon({ script: 'server.js', ext: 'html jade scss js' })
+		.on(['restart'], ['sass', 'lint'])
 });
